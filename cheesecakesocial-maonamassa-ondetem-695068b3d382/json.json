@@ -1,0 +1,18 @@
+{
+    "id"            :"",
+    "title"         :"",
+    "owner"         :"",
+    "place"         :"",
+    "dateStart"     :"",
+    "dateEnd"       :"",
+    "period"        :"",
+    "description"   :"",
+    "minAge"        :"",
+    "minSchool"     :"",
+    "mode"          :"",
+    "contactPhone"  :"",
+    "contactName"   :"",
+    "contactEmail"  :"",
+    "aprovated"     :"",
+    "googlePlace_id":""
+}

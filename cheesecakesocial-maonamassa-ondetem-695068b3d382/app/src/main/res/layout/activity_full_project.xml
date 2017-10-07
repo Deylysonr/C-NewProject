@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_full_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_details"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/conteudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textProjectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="Projeto Mão na Massa!"
+                android:textSize="20sp"
+                android:layout_marginBottom="2dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textProjectOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProjectTitle"
+                android:text="Cheescake Labs"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textProjectLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProjectOwner"
+                android:text="Partec ALFA"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/projectStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProjectLocal"
+                android:text="Inicio: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textProjectDateStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProjectLocal"
+                android:layout_toEndOf="@+id/projectStart"
+                android:text="16/04/2017"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/projectPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProjectDateStart"
+                android:text="Período: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textProjectPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProjectDateStart"
+                android:layout_toEndOf="@+id/projectPeriod"
+                android:text="Matutino"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textProjectPeriod"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Descrição:" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Description"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="14sp"
+                android:text="Conteudo" />
+
+            <TextView
+                android:id="@+id/preRequisitos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDescription"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Pré-requisitos : " />
+
+            <TextView
+                android:id="@+id/minAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/preRequisitos"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Idade min: " />
+
+            <TextView
+                android:id="@+id/textMinAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/preRequisitos"
+                android:layout_toEndOf="@id/minAge"
+                android:textSize="14sp"
+                android:text="15 anos" />
+
+            <TextView
+                android:id="@+id/minSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/minAge"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Escolaridade min: " />
+
+            <TextView
+                android:id="@+id/textMinSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/minAge"
+                android:layout_toEndOf="@id/minSchool"
+                android:textSize="14sp"
+                android:text="9º ano" />
+
+            <TextView
+                android:id="@+id/contato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/minSchool"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Contato: " />
+
+            <TextView
+                android:id="@+id/textContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/minSchool"
+                android:layout_toEndOf="@id/contato"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:text="nome" />
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContactName"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Telefone: " />
+
+            <TextView
+                android:id="@+id/textContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContactName"
+                android:layout_toEndOf="@id/Phone"
+                android:textSize="14sp"
+                android:text="Phone" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Phone"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Email: " />
+
+            <TextView
+                android:id="@+id/textContactEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContactPhone"
+                android:layout_toEndOf="@id/Email"
+                android:textSize="14sp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/Site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Email"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Site: " />
+
+            <TextView
+                android:id="@+id/textContactSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContactEmail"
+                android:layout_toEndOf="@id/Site"
+                android:textSize="14sp"
+                android:text="site" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+
+        />
+    <TextView
+        android:id="@+id/textProjectTitle"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Projeto Mão na Massa!"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/avatar"/>
+    <TextView
+        android:id="@+id/textProjectOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_below="@+id/textProjectTitle"
+        android:text="Cheescake Labs"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/textProjectLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_below="@+id/textProjectOwner"
+        android:text="Partec ALFA"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/projectStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_below="@+id/textProjectLocal"
+        android:text="Inicio: "
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textProjectDateStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/projectStart"
+        android:layout_below="@+id/textProjectLocal"
+        android:text="16/04/2017"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/projectPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_below="@+id/textProjectDateStart"
+        android:text="Período: "
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textProjectPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/projectPeriod"
+        android:layout_below="@+id/textProjectDateStart"
+        android:text="Matutino"
+        android:textSize="12sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
